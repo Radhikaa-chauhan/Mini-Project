@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Smart Monitor</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Real-Time Monitoring Dashboard</h1>
+            <p>Track your utility usage in real-time with live data updates.</p>
+        </header>
+
+        <section class="charts-container">
+            <div class="chart-card">
+                <h2>Electricity Usage</h2>
+                <canvas id="electricityChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h2>Water Usage</h2>
+                <canvas id="waterChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h2>Gas Usage</h2>
+                <canvas id="gasChart"></canvas>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="tips-section">
+      <h2>Tips & Tricks to Reduce Consumption</h2>
+      <div class="tips-grid">
+          <div class="tip-card" id="electricity-tip">
+              <h3>Electricity</h3>
+              <p>Turn off appliances when not in use and use energy-efficient devices.</p>
+          </div>
+          <div class="tip-card" id="water-tip">
+              <h3>Water</h3>
+              <p>Fix leaks promptly and consider installing water-saving showerheads.</p>
+          </div>
+          <div class="tip-card" id="gas-tip">
+              <h3>Gas</h3>
+              <p>Ensure regular maintenance of gas appliances and optimize cooking time.</p>
+          </div>
+      </div>
+  </section>
+  
+
+  <section class="alerts-section">
+    <h2>Real-Time Alerts</h2>
+    <div id="alerts-container" class="alerts-container">
+        <p>No issues detected. All systems are functioning normally.</p>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Smart Monitor | All Rights Reserved</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
